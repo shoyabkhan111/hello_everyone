@@ -1,0 +1,464 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vh 4vw;
+    position: relative;
+    
+}
+.nav-left{
+    display: flex;
+    gap:4vw;
+}
+.nav-left a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2vw;
+    display: inline-block;
+}
+.nav h3{
+    font-weight: 300;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.nav-right h4{
+    font-weight: 300;
+    font-size: 1.2vw;
+}
+
+.hero{
+    margin-top: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4vw;
+}
+.rig{
+    width: 16vw;
+}
+.img-1, img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.rig h3{
+    font-size: 1.1vw;
+    font-weight: 600;
+}
+.rig p{
+    font-size: 1vw;
+    line-height: 1.0;
+    width: 14vw;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+    color: rgb(128, 128, 128);
+}
+
+.rig .img-1{
+    width: 8vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.mid{
+    width: 21vw;
+    position: relative;
+
+}
+
+.mid .img-2{
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    object-fit: contain;
+    
+}
+.mid h1{
+    width: 20vw;
+    word-wrap:break-word;
+    position: absolute;
+    top: -14%;
+    left: -12%;
+    font-weight: 545;
+    font-size: 3.4vw;
+    
+}
+
+
+.last i{
+    border: 2px solid grey;
+    font-size: 4vw;
+    border-radius: 50%;
+    font-weight: 50;
+    color: gray
+    
+}
+.last h4{
+    font-size: 2vw;
+    align-items: center;
+    display: flex;
+    color:grey;
+    gap: 10px;
+}
+
+.mid  p{
+    margin-top: 3vh;
+    line-height: 1;
+    width: 18vw;
+}
+
+.content{
+    margin-top: 6vh;
+    padding: 2vh 4vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content h5{
+    color: grey;
+}
+
+.content span{
+    display: inline-block;
+    width: 5vw;
+    height: 30px;
+    border-radius: 3vw;
+}
+.content p{
+    text-align: right;
+    align-content: end;
+    font-size: 2.2vw;
+    width: 75vw;
+}
+
+.content #one{
+    background-image: url(bluegirl.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.content #two{
+    background-image: url(shaljam.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.content #three{
+    background-image: url(grass.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.page2{
+    padding: 0 4vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20vh;
+}
+
+.partsea{
+    width: 150px;
+    height: 210px;
+    background-color: rgb(91, 86, 86);
+    background-image: url(sea.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.partcloud{
+    width: 250px;
+    height: 360px;
+    background-color: rgb(65, 61, 61);
+    background-image: url(cloud.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5%;
+}
+.sea{
+    margin-left: 20vw;
+}
+.sea p{
+    padding-top: 7px;
+    width: 20vw;
+    line-height: 1;
+
+}
+.sea h3{
+    padding-top: 1vh;
+    font-size: 2vw;
+    font-weight: 400;
+}
+.cloud p{
+    padding-top: 7px;
+    width: 25vw;
+    line-height: 1;  
+}
+.cloud h3{
+    padding-top: 1vh;
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+}
+
+.banner .ban{
+    width: 50%;
+    height: 75vh;
+}
+.ban img{
+    object-fit: cover;
+    object-position: 0 70%;
+}
+
+.text{
+    padding: 0 2vw;
+    width: 30vw;
+}
+
+.text h2{
+    font-size: 2.8vw;
+    font-weight: 400;
+}
+.text p{
+    padding-top: 4vh;
+    line-height: 1;
+}
+
+.future{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    position: relative;
+}
+
+.future video{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+.textf{
+    position: relative;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textf h1{
+    font-size: 2.5vw;
+    background-color: rgba(255, 255, 255, 0.601);
+    padding: 2vh;
+    border-radius: 1.5vh;
+}
+
+.textf button{
+    padding: 2vh;
+    font-size: 1vw;
+    background-color: rgba(197, 192, 192, 0.671);
+    border-radius: 1vw;
+    letter-spacing: 0.2vw;
+    border: 1px solid rgb(245, 243, 243);
+    margin-top: 1vh;
+}
+
+@media (max-width: 700px) {
+    .rig{
+        margin-bottom: 12vh;
+    }
+    .rig p{
+        font-size: 1.5vw;
+        width: 15vw;
+        margin-bottom: 1vh;
+        margin-top: 1vh;
+    }
+    .rig h3{
+        font-size: 1.6vw;
+    }
+    .rig .img-1{
+        width: 11vw;
+    }
+    .hero{
+        margin-top: 15vh;
+    }
+    .mid{
+        width: 25vw;
+    }
+    .mid h1{
+        top: -6vh;
+    }
+    .mid p{
+        margin-top: .5vh;
+        width: 30vw;
+        font-size: 2.2vw;
+    }
+    .content{
+        margin-top: 2vh;
+    }
+    .content p{
+        padding: 20px 0;
+    }
+    .content span{
+        width: 9vw;
+        line-height: -1;
+    }
+    .page2{
+        margin-top: 2.1vh;
+    }
+    .page2 .sea{
+        margin-left: 7vw;
+    }
+    .sea h3{
+        font-size: 2.5vw;
+    }
+    .sea p{
+        width: 30vw;
+        font-size: 2.1vw;
+    }
+    .cloud h3{
+        font-size: 3vw;
+    }
+    .cloud p{
+        width: 38vw;
+        font-size: 2.1vw;
+    }
+
+    .banner .ban{
+        width: 55vw;
+        height: 50vh;
+        background-size:cover;
+        background-position: center;
+    }
+    .ban img{
+        object-fit: cover;
+        object-position: center;
+    }
+    .banner p{
+        padding: 1.5vh 0;
+        width: 35vw;
+        font-size: 2.1vw;
+    }
+}
+
+@media (max-width: 455px){
+
+    .nav{
+        padding: 2vh 4vw;
+    }
+    .nav-left a{
+        font-size: 1.8vw;
+    }
+    .nav-right h4{
+        font-size: 1.8vw;
+    }
+    .nav h3{
+        font-size: 1.8vw;
+    }
+    .hero{
+        margin-top: 7vh;
+    }
+    .rig{
+        margin-bottom: 1vh;
+    }
+    .rig p{
+        font-size: 2vw;
+        width: 22vw;
+        margin-top: .5vh;
+        margin-bottom: .5vh;
+    }
+    .rig img{
+        width: 12vw;
+    }
+    .rig h3{
+        font-size: 2vw;
+    }
+    .mid{
+        width: 26vw;
+    }
+    .mid h1{
+        top: -11%;
+    }
+    .mid p{
+        margin-top: none;
+        width: 30vw;
+    }
+    .content{
+        margin-top: 2vh;
+        padding: 0 5vw;
+    }
+    .content span{
+        width: 12vw;
+    }
+    .content p {
+        margin-top: 3vh;
+        width: 100vw;
+        font-size: 3.5vw;
+        padding-top: 1vh;
+        padding-bottom: 0vh;
+    }
+    .content h5{
+        position: absolute;
+        left: 40vw;
+    }
+    .page2{
+        margin-top: 1;
+    }
+    .page2 .sea{
+        margin-left: 0;
+    }
+    .sea .partsea{
+        width: 24vw;
+        height: 35vh;
+    }
+    .sea h3{
+        font-size: 3vw;
+        width: 22vw;
+        margin-bottom: .5vh;
+    }
+    .sea p{
+        padding-top: 0;
+
+    }
+    .cloud .partcloud{
+        width: 38vw;
+        height: 60vh;
+    }
+    .cloud h3{
+        font-size: 4vw;
+    }
+    .cloud p{
+        padding-top: 0;
+    }
+}
+@media (max-width: 330px) {
+    
+    .content span{
+        width: 15vw;
+        height: 5vh;
+    }
+    
+}
